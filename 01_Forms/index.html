@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form's Exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+    <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="John" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="secondName" placeholder="Smith" required>
+    </p>
+    <p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="gomo">
+    </p>
+    <p>
+        <label>Email: <input type="email" name="email" placeholder="name@domain.com" required></label>
+        <label>Password: <input type="password" name="password" placeholder="your passowrd" required pattern=".{5,12}" title="Введите от 5 до 12 символов"></label>
+    </p>
+    <p>
+        <label>Birthday:
+            <select name="day">
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select name="month"></select>
+            <select></select>
+        </label>
+    </p>
+    <p>
+        <label for="agree">I agree with it</label>
+        <input type="checkbox" id="agree" name="agree" required>
+    </p>
+    <input type="submit">
+</form>
+</body>
+</html>
